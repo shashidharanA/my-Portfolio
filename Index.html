@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shashidharan Anbazhagan — DevOps Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <img src="./assets/logo-pic.png" alt="Shashidharan Anbazhagan" class="nav-logo-img" />
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#learning">Learning</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-bg">
+            <div class="orb orb1"></div>
+            <div class="orb orb2"></div>
+            <div class="orb orb3"></div>
+            <canvas id="grid-canvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <p class="hero-eyebrow reveal">Available for work</p>
+            <h1 class="hero-name reveal">
+                <span class="line">Shashi</span><span class="line accent-line">Dharan</span>
+            </h1>
+            <p class="hero-subtitle reveal">
+                SysOps Engineer&nbsp;&nbsp;/&nbsp;&nbsp;Linux Administrator&nbsp;&nbsp;/&nbsp;&nbsp;Infrastructure
+                Specialist&nbsp;&nbsp;/&nbsp;&nbsp;Cloud Engineer
+            </p>
+            <p class="hero-desc reveal">
+                I architect reliable infrastructure, automate complex pipelines, and keep production systems breathing —
+                smoothly, at scale.
+            </p>
+            <div class="hero-actions reveal">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-ghost">Contact Me</a>
+            </div>
+        </div>
+        <!-- Hero right-side photo -->
+        <div class="hero-photo-wrap">
+            <img src="./assets/about-pic.png" alt="Shashidharan Anbazhagan" class="hero-photo" />
+            <div class="hero-photo-glow"></div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="section-label reveal">01 — About</div>
+            <div class="about-grid">
+                <div class="about-image-wrap reveal">
+                    <div class="about-image-frame">
+                        <img src="./assets/profile-pic.png" alt="Shashidharan Anbazhagan" class="about-photo" />
+                        <div class="about-image-tag">Chennai, IN</div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-pill">
+                            <span class="stat-num">4+</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                        <div class="stat-pill">
+                            <span class="stat-num">12+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-pill">
+                            <span class="stat-num">99%</span>
+                            <span class="stat-label">Uptime Focus</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <h2 class="section-heading">Building infrastructure<br />that doesn't flinch.</h2>
+                    <p>
+                        I am a DevOps engineer with deep experience in Linux systems, containerization, infrastructure
+                        automation, and monitoring platforms. I enjoy building reliable systems and solving complex
+                        infrastructure challenges.
+                    </p>
+                    <p>
+                        My approach is pragmatic — I use the right tool for the job, whether that's a bash script at 2
+                        AM or a full GitLab CI/CD overhaul. I care deeply about observability, security, and making
+                        deployments boring (in the best way).
+                    </p>
+                    <div class="about-tags">
+                        <span>Linux</span>
+                        <span>Docker</span>
+                        <span>GitLab CI</span>
+                        <span>Grafana</span>
+                        <span>InfluxDB</span>
+                        <span>DigitalOcean</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-label reveal">02 — Skills</div>
+            <h2 class="section-heading reveal">What I work with</h2>
+            <div class="skills-grid">
+
+                <div class="skill-category reveal">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                            </svg>
+                        </div>
+                        <span>Operating Systems</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>Linux</li>
+                        <li><span class="skill-dot"></span>NetBSD</li>
+                        <li><span class="skill-dot"></span>Windows Server</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <span>DevOps Tools</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>Docker</li>
+                        <li><span class="skill-dot"></span>Docker Compose</li>
+                        <li><span class="skill-dot"></span>GitLab CI</li>
+                        <li><span class="skill-dot"></span>CI/CD Pipelines</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                            </svg>
+                        </div>
+                        <span>Monitoring</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>Grafana</li>
+                        <li><span class="skill-dot"></span>InfluxDB</li>
+                        <li><span class="skill-dot"></span>MQTT Monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category reveal">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <span>Infrastructure</span>
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="skill-dot"></span>DigitalOcean</li>
+                        <li><span class="skill-dot"></span>Server Security</li>
+                        <li><span class="skill-dot"></span>Networking</li>
+                        <li><span class="skill-dot"></span>Gateway Servers</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-label reveal">03 — Projects</div>
+            <h2 class="section-heading reveal">Selected work</h2>
+            <div class="projects-grid">
+
+                <div class="project-card reveal" data-index="01">
+                    <div class="project-card-top">
+                        <div class="project-num">01</div>
+                        <div class="project-visual iot">
+                            <div class="pv-shapes">
+                                <div class="pv-circle"></div>
+                                <div class="pv-line"></div>
+                                <div class="pv-dot d1"></div>
+                                <div class="pv-dot d2"></div>
+                                <div class="pv-dot d3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>IoT Monitoring Platform</h3>
+                        <p>End-to-end IoT data pipeline collecting sensor telemetry via MQTT, flowing through Node-RED
+                            into InfluxDB, visualized in real-time on Grafana dashboards.</p>
+                        <div class="project-tags">
+                            <span>Docker</span><span>Grafana</span><span>InfluxDB</span><span>MQTT</span><span>Node-RED</span>
+                        </div>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </div>
+
+                <div class="project-card reveal" data-index="02">
+                    <div class="project-card-top">
+                        <div class="project-num">02</div>
+                        <div class="project-visual lorawan">
+                            <div class="pv-shapes">
+                                <div class="pv-wave"></div>
+                                <div class="pv-wave w2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>ChirpStack LoRaWAN Server</h3>
+                        <p>Production-grade LoRaWAN network server stack on Linux. Handles device provisioning,
+                            uplink/downlink message routing, and MQTT integration for IoT connectivity.</p>
+                        <div class="project-tags">
+                            <span>ChirpStack</span><span>MQTT</span><span>Linux</span>
+                        </div>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </div>
+
+                <div class="project-card reveal" data-index="03">
+                    <div class="project-card-top">
+                        <div class="project-num">03</div>
+                        <div class="project-visual cicd">
+                            <div class="pv-shapes">
+                                <div class="pv-pipe"></div>
+                                <div class="pv-pipe p2"></div>
+                                <div class="pv-pipe p3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>CI/CD Automation Stack</h3>
+                        <p>Fully automated GitLab CI/CD pipeline with Docker-based build environments, automated testing
+                            gates, and zero-downtime deployment strategies.</p>
+                        <div class="project-tags">
+                            <span>GitLab CI</span><span>Docker</span>
+                        </div>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </div>
+
+                <div class="project-card reveal" data-index="04">
+                    <div class="project-card-top">
+                        <div class="project-num">04</div>
+                        <div class="project-visual shopify">
+                            <div class="pv-shapes">
+                                <div class="pv-rect"></div>
+                                <div class="pv-rect r2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <h3>Shopify Custom Automation</h3>
+                        <p>Custom Shopify theme automation using Liquid templates and JavaScript, with Shopify API
+                            integrations for inventory sync, webhooks, and automated order workflows.</p>
+                        <div class="project-tags">
+                            <span>Shopify API</span><span>Liquid</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-arrow">↗</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LEARNING -->
+    <section id="learning">
+        <div class="container">
+            <div class="section-label reveal">04 — Learning</div>
+            <h2 class="section-heading reveal">Currently leveling up</h2>
+            <div class="timeline">
+
+                <div class="timeline-item reveal">
+                    <div class="tl-marker">
+                        <div class="tl-dot"></div>
+                        <div class="tl-line"></div>
+                    </div>
+                    <div class="tl-content">
+                        <div class="tl-badge">In Progress</div>
+                        <h3>MLOps</h3>
+                        <p>Exploring ML model lifecycle management, experiment tracking, and production deployment
+                            strategies for machine learning systems.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="tl-marker">
+                        <div class="tl-dot"></div>
+                        <div class="tl-line"></div>
+                    </div>
+                    <div class="tl-content">
+                        <div class="tl-badge">In Progress</div>
+                        <h3>AI-Assisted Development</h3>
+                        <p>Integrating AI tooling into infrastructure workflows — code generation, anomaly detection,
+                            and intelligent alerting in monitoring stacks.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="tl-marker">
+                        <div class="tl-dot"></div>
+                        <div class="tl-line"></div>
+                    </div>
+                    <div class="tl-content">
+                        <div class="tl-badge">Certification</div>
+                        <h3>Automation Anywhere</h3>
+                        <p>Pursuing RPA certification to bring enterprise-grade robotic process automation into
+                            infrastructure management workflows.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="tl-marker">
+                        <div class="tl-dot"></div>
+                    </div>
+                    <div class="tl-content">
+                        <div class="tl-badge">Deepening</div>
+                        <h3>Infrastructure Automation</h3>
+                        <p>Advancing skills in IaC tooling, configuration management, and declarative infrastructure to
+                            reduce toil and improve reproducibility.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-label reveal">05 — Contact</div>
+            <div class="contact-grid">
+                <div class="contact-left reveal">
+                    <h2 class="section-heading">Let's build<br />something solid.</h2>
+                    <p>Open to new opportunities, collaborations, and interesting infrastructure challenges. Drop a
+                        message or connect on any platform below.</p>
+                    <div class="contact-links">
+                        <a href="mailto:shashidharan@example.com" class="contact-link">
+                            <div class="cl-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </div>
+                            <div class="cl-text">
+                                <span class="cl-label">Email</span>
+                                <span class="cl-value">shashidharan.official@gmail.com</span>
+                            </div>
+                            <span class="cl-arrow">→</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shashidharanofficial" target="_blank" class="contact-link">
+                            <div class="cl-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                            </div>
+                            <div class="cl-text">
+                                <span class="cl-label">LinkedIn</span>
+                                <span class="cl-value">www.linkedin.com/in/shashidharanofficial</span>
+                            </div>
+                            <span class="cl-arrow">→</span>
+                        </a>
+                        <a href="https://github.com/shashidharanA" target="_blank" class="contact-link">
+                            <div class="cl-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </div>
+                            <div class="cl-text">
+                                <span class="cl-label">GitHub</span>
+                                <span class="cl-value">github.com/shashidharanA</span>
+                            </div>
+                            <span class="cl-arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <a href="#hero" class="footer-logo-wrap">
+                    <img src="./assets/logo-pic.png" alt="Shashidharan Anbazhagan" class="footer-logo-img" />
+                    <span class="footer-logo-name">Shashidharan Anbazhagan<span class="dot">.</span></span>
+                </a>
+                <span class="footer-copy">© 2026 Shashidharan Anbazhagan.</span>
+                <a href="#hero" class="footer-back">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
