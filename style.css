@@ -606,8 +606,9 @@ section {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
+  align-items: start;
 }
 
 .skill-category {
@@ -1242,8 +1243,8 @@ footer {
 }
 
 .footer-logo-img {
-  width: 150px;
-  height: 150px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center top;
@@ -1310,7 +1311,7 @@ footer {
    ============================ */
 @media (max-width: 1024px) {
   .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .about-grid {
@@ -1367,7 +1368,7 @@ footer {
   }
 
   .skills-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer-inner {
